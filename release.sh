@@ -28,25 +28,57 @@ echo $'\e[34m=============================\e[0m'
 echo ""
 
 # Update version in podspec file
-sed -i '' "s/spec\.version = '[^']*'/spec.version = '$VERSION'/" "$PODSPEC_PATH"
+sed -i '' "s/spec\.version[[:space:]]*= '[^']*'/spec.version      = '$VERSION'/" "$PODSPEC_PATH"
 
-# Commit and push the changes
-git add .
-git commit -m "Bump version to $VERSION"
-git push origin $CURRENT_BRANCH
+# Commit and push the changes (skip if nothing to commit)
+if git diff --quiet && git diff --cached --quiet; then
+  echo "⚠️  No changes to commit, skipping"
+else
+  git add .
+  if git commit -m "Bump version to $VERSION" 2>/dev/null; then
+    echo "✅ Changes committed"
+  else
+    echo "⚠️  Nothing to commit or commit failed, continuing..."
+  fi
 
-git tag $VERSION
-git push origin $VERSION
+  if git push origin $CURRENT_BRANCH 2>/dev/null; then
+    echo "✅ Changes pushed to $CURRENT_BRANCH"
+  else
+    echo "⚠️  Push failed or nothing to push, continuing..."
+  fi
+fi
+
+# Create and push tag (skip if already exists)
+if git rev-parse "$VERSION" >/dev/null 2>&1; then
+  echo "⚠️  Tag $VERSION already exists locally, skipping tag creation"
+else
+  git tag $VERSION
+  echo "✅ Tag $VERSION created"
+fi
+
+if git ls-remote --tags origin | grep -q "refs/tags/$VERSION\$"; then
+  echo "⚠️  Tag $VERSION already exists on remote, skipping tag push"
+else
+  git push origin $VERSION
+  echo "✅ Tag $VERSION pushed to remote"
+fi
 
 # Check if DaroObjCBridge.xcframework.zip exists
 if [ ! -f "$SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip" ]; then
-  echo "$SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip file not found"
+  echo "❌ $SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip file not found"
   exit 1
 fi
 
-# Create a tag and release using GitHub CLI with the file
-gh release create $VERSION "$SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
-git pull origin $CURRENT_BRANCH
+# Create a release using GitHub CLI (skip if already exists)
+if gh release view $VERSION >/dev/null 2>&1; then
+  echo "⚠️  GitHub release $VERSION already exists, skipping creation"
+else
+  gh release create $VERSION "$SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
+  echo "✅ GitHub release $VERSION created"
+fi
+
+git pull origin $CURRENT_BRANCH 2>/dev/null || echo "⚠️  Git pull failed or nothing to pull"
 
 # Push the podspec to the trunk
+echo "📦 Pushing podspec to CocoaPods trunk..."
 pod trunk push "$PODSPEC_PATH" --allow-warnings --verbose
