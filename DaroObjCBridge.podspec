@@ -19,8 +19,9 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = 'DaroObjCBridge.xcframework'
 
-  # DaroObjCBridge is a dynamic framework that already includes Daro (static) inside
-  # So we don't declare Daro as a dependency here
+  # DaroObjCBridge is a dynamic framework that links to Daro
+  # We need to declare Daro as a dependency
+  spec.dependency 'DaroAds', '1.1.44-beta'
 
   spec.frameworks = 'UIKit', 'Foundation'
 
