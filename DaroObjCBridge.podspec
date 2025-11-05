@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DaroObjCBridge'
-  spec.version      = '0.0.1'
+  spec.version      = '0.0.2'
   spec.summary      = 'Objective-C Bridge for Daro iOS SDK'
   spec.description  = <<-DESC
                       Objective-C compatible wrapper for Daro iOS SDK.
