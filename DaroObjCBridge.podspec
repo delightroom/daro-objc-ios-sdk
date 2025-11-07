@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   # DaroObjCBridge is a dynamic framework that links to Daro
   # We need to declare Daro as a dependency
-  spec.dependency 'DaroAds', '1.1.44-beta'
+  spec.dependency 'DaroAds', '1.1.42'
 
   spec.frameworks = 'UIKit', 'Foundation'
 
