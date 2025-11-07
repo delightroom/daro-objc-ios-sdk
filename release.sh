@@ -130,8 +130,20 @@ else
   if gh release view $VERSION >/dev/null 2>&1; then
     echo "⚠️  GitHub release $VERSION already exists, skipping creation"
   else
-    gh release create $VERSION "$SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip" --title "Release $VERSION" --notes "Release version $VERSION"
+    # Create release first without file upload
+    echo "📦 Creating release..."
+    gh release create $VERSION --title "Release $VERSION" --notes "Release version $VERSION"
     echo "✅ GitHub release $VERSION created"
+
+    # Upload file separately for better error handling
+    echo "📤 Uploading XCFramework..."
+    if gh release upload $VERSION "$SCRIPT_DIR/build/DaroObjCBridge.xcframework.zip" --clobber; then
+      echo "✅ XCFramework uploaded successfully"
+    else
+      echo "❌ Failed to upload XCFramework"
+      echo "💡 You can retry upload with: gh release upload $VERSION build/DaroObjCBridge.xcframework.zip --clobber"
+      exit 1
+    fi
   fi
   mark_step_completed "GITHUB_RELEASE"
   echo "✅ [4/5] GitHub release step completed"
