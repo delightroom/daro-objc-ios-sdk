@@ -21,24 +21,7 @@ Pod::Spec.new do |spec|
 
   # DaroObjCBridge is a dynamic framework that links to Daro
   # We need to declare Daro as a dependency
-  spec.dependency 'DaroAds', '1.1.42'
+  spec.dependency 'DaroAds', '1.1.45-beta'
 
   spec.frameworks = 'UIKit', 'Foundation'
-
-  # Required by Google Mobile Ads SDK (Daro's dependency)
-  spec.weak_frameworks = [
-    'AdSupport',
-    'AVFoundation',
-    'CFNetwork',
-    'CoreGraphics',
-    'CoreMedia',
-    'CoreTelephony',
-    'CoreVideo',
-    'MediaPlayer',
-    'MessageUI',
-    'StoreKit',
-    'SystemConfiguration',
-    'WebKit',
-    'AppTrackingTransparency'
-  ]
 end
