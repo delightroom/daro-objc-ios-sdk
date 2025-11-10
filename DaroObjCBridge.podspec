@@ -17,11 +17,13 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.swift_version         = '5.0'
 
+  spec.resource_bundles = {
+    'DaroObjCBridgeResources' => ['DaroObjCBridge.xcframework/ios-arm64/DaroObjCBridge.framework/PrivacyInfo.xcprivacy']
+  }
+
   spec.vendored_frameworks = 'DaroObjCBridge.xcframework'
 
   # DaroObjCBridge is a dynamic framework that links to Daro
   # We need to declare Daro as a dependency
   spec.dependency 'DaroAds', '1.1.45-beta'
-
-  spec.frameworks = 'UIKit', 'Foundation'
 end
