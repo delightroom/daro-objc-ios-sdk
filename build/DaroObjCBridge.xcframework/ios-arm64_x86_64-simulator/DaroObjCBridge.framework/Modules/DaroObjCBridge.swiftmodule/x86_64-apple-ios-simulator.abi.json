@@ -12,6 +12,174 @@
         "moduleName": "DaroObjCBridge"
       },
       {
+        "kind": "TypeDecl",
+        "name": "DaroObjCBridgeResources",
+        "printedName": "DaroObjCBridgeResources",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bundle",
+            "printedName": "bundle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeResources(cpy)bundle",
+            "mangledName": "$s14DaroObjCBridge0abC9ResourcesC6bundleSo8NSBundleCvpZ",
+            "moduleName": "DaroObjCBridge",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeResources(cm)bundle",
+                "mangledName": "$s14DaroObjCBridge0abC9ResourcesC6bundleSo8NSBundleCvgZ",
+                "moduleName": "DaroObjCBridge",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DaroObjCBridgeResources",
+                "printedName": "DaroObjCBridge.DaroObjCBridgeResources",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeResources"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeResources(im)init",
+            "mangledName": "$s14DaroObjCBridge0abC9ResourcesCACycfc",
+            "moduleName": "DaroObjCBridge",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeResources",
+        "mangledName": "$s14DaroObjCBridge0abC9ResourcesC",
+        "moduleName": "DaroObjCBridge",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaroObjCBridge"
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -720,6 +888,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCBannerViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -756,6 +925,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCBannerViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -1060,33 +1230,6 @@
               "ObjC"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "didMoveToSuperview",
-            "printedName": "didMoveToSuperview()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBannerView(im)didMoveToSuperview",
-            "mangledName": "$s14DaroObjCBridge0aB11CBannerViewC18didMoveToSuperviewyyF",
-            "moduleName": "DaroObjCBridge",
-            "overriding": true,
-            "objc_name": "didMoveToSuperview",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -1729,6 +1872,1114 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DaroObjCLightPopupConfiguration",
+        "printedName": "DaroObjCLightPopupConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)backgroundColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15backgroundColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)backgroundColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15backgroundColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setBackgroundColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15backgroundColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC15backgroundColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15backgroundColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardViewBackgroundColor",
+            "printedName": "cardViewBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)cardViewBackgroundColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC23cardViewBackgroundColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)cardViewBackgroundColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC23cardViewBackgroundColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setCardViewBackgroundColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC23cardViewBackgroundColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC23cardViewBackgroundColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC23cardViewBackgroundColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adMarkLabelTextColor",
+            "printedName": "adMarkLabelTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)adMarkLabelTextColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20adMarkLabelTextColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)adMarkLabelTextColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20adMarkLabelTextColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setAdMarkLabelTextColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20adMarkLabelTextColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC20adMarkLabelTextColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20adMarkLabelTextColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adMarkLabelBackgroundColor",
+            "printedName": "adMarkLabelBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)adMarkLabelBackgroundColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC26adMarkLabelBackgroundColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)adMarkLabelBackgroundColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC26adMarkLabelBackgroundColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setAdMarkLabelBackgroundColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC26adMarkLabelBackgroundColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC26adMarkLabelBackgroundColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC26adMarkLabelBackgroundColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonText",
+            "printedName": "closeButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)closeButtonText",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15closeButtonTextSSvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)closeButtonText",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15closeButtonTextSSvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setCloseButtonText:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15closeButtonTextSSvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC15closeButtonTextSSvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC15closeButtonTextSSvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonTextColor",
+            "printedName": "closeButtonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)closeButtonTextColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20closeButtonTextColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)closeButtonTextColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20closeButtonTextColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setCloseButtonTextColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20closeButtonTextColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC20closeButtonTextColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC20closeButtonTextColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleTextColor",
+            "printedName": "titleTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)titleTextColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC14titleTextColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)titleTextColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC14titleTextColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setTitleTextColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC14titleTextColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC14titleTextColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC14titleTextColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bodyTextColor",
+            "printedName": "bodyTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)bodyTextColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC13bodyTextColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)bodyTextColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC13bodyTextColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setBodyTextColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC13bodyTextColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC13bodyTextColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC13bodyTextColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaButtonTextColor",
+            "printedName": "ctaButtonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)ctaButtonTextColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC18ctaButtonTextColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)ctaButtonTextColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC18ctaButtonTextColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setCtaButtonTextColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC18ctaButtonTextColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC18ctaButtonTextColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC18ctaButtonTextColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaButtonBackgroundColor",
+            "printedName": "ctaButtonBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(py)ctaButtonBackgroundColor",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC24ctaButtonBackgroundColorSo7UIColorCvp",
+            "moduleName": "DaroObjCBridge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)ctaButtonBackgroundColor",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC24ctaButtonBackgroundColorSo7UIColorCvg",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)setCtaButtonBackgroundColor:",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC24ctaButtonBackgroundColorSo7UIColorCvs",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DaroObjCBridge0aB24CLightPopupConfigurationC24ctaButtonBackgroundColorSo7UIColorCvM",
+                "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC24ctaButtonBackgroundColorSo7UIColorCvM",
+                "moduleName": "DaroObjCBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DaroObjCLightPopupConfiguration",
+                "printedName": "DaroObjCBridge.DaroObjCLightPopupConfiguration",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration(im)init",
+            "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationCACycfc",
+            "moduleName": "DaroObjCBridge",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration",
+        "mangledName": "$s14DaroObjCBridge0aB24CLightPopupConfigurationC",
+        "moduleName": "DaroObjCBridge",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DaroObjCLightPopupAdLoaderDelegate",
         "printedName": "DaroObjCLightPopupAdLoaderDelegate",
         "children": [
@@ -1769,6 +3020,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLightPopupAdLoaderDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -1805,6 +3057,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLightPopupAdLoaderDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -1949,6 +3202,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLightPopupAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -1985,6 +3239,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLightPopupAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2027,6 +3282,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLightPopupAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2205,8 +3461,8 @@
           },
           {
             "kind": "Function",
-            "name": "setBackgroundColor",
-            "printedName": "setBackgroundColor(_:)",
+            "name": "setConfiguration",
+            "printedName": "setConfiguration(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2215,72 +3471,19 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "DaroObjCLightPopupConfiguration",
+                "printedName": "DaroObjCBridge.DaroObjCLightPopupConfiguration",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupConfiguration"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupAd(im)setBackgroundColor:",
-            "mangledName": "$s14DaroObjCBridge0aB13CLightPopupAdC18setBackgroundColoryySo7UIColorCF",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupAd(im)setConfiguration:",
+            "mangledName": "$s14DaroObjCBridge0aB13CLightPopupAdC16setConfigurationyyAA0abdeH0CF",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCardViewBackgroundColor",
-            "printedName": "setCardViewBackgroundColor(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupAd(im)setCardViewBackgroundColor:",
-            "mangledName": "$s14DaroObjCBridge0aB13CLightPopupAdC26setCardViewBackgroundColoryySo7UIColorCF",
-            "moduleName": "DaroObjCBridge",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCloseButtonTextColor",
-            "printedName": "setCloseButtonTextColor(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLightPopupAd(im)setCloseButtonTextColor:",
-            "mangledName": "$s14DaroObjCBridge0aB13CLightPopupAdC23setCloseButtonTextColoryySo7UIColorCF",
-            "moduleName": "DaroObjCBridge",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2722,6 +3925,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLineBannerViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2758,6 +3962,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCLineBannerViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3050,33 +4255,6 @@
               "ObjC"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "didMoveToSuperview",
-            "printedName": "didMoveToSuperview()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCLineBannerView(im)didMoveToSuperview",
-            "mangledName": "$s14DaroObjCBridge0aB15CLineBannerViewC18didMoveToSuperviewyyF",
-            "moduleName": "DaroObjCBridge",
-            "overriding": true,
-            "objc_name": "didMoveToSuperview",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -3412,13 +4590,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -3482,6 +4653,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCNativeViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3518,6 +4690,7 @@
             "sugared_genericSig": "<Self where Self : DaroObjCBridge.DaroObjCNativeViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4106,8 +5279,9 @@
           "Preconcurrency",
           "Custom",
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
         "superclassNames": [
@@ -4199,13 +5373,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4973,8 +6140,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "DaroObjCBridgeManager",
-        "printedName": "DaroObjCBridgeManager",
+        "name": "DaroObjCAds",
+        "printedName": "DaroObjCAds",
         "children": [
           {
             "kind": "Var",
@@ -4983,14 +6150,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DaroObjCBridgeManager",
-                "printedName": "DaroObjCBridge.DaroObjCBridgeManager",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager"
+                "name": "DaroObjCAds",
+                "printedName": "DaroObjCBridge.DaroObjCAds",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(cpy)shared",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC6sharedACvpZ",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(cpy)shared",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC6sharedACvpZ",
             "moduleName": "DaroObjCBridge",
             "static": true,
             "declAttributes": [
@@ -5010,14 +6177,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DaroObjCBridgeManager",
-                    "printedName": "DaroObjCBridge.DaroObjCBridgeManager",
-                    "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager"
+                    "name": "DaroObjCAds",
+                    "printedName": "DaroObjCBridge.DaroObjCAds",
+                    "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(cm)shared",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC6sharedACvgZ",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(cm)shared",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC6sharedACvgZ",
                 "moduleName": "DaroObjCBridge",
                 "static": true,
                 "implicit": true,
@@ -5050,8 +6217,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)userId",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC6userIdSSSgvp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)userId",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC6userIdSSSgvp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5080,8 +6247,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)userId",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC6userIdSSSgvg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)userId",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC6userIdSSSgvg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5114,8 +6281,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setUserId:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC6userIdSSSgvs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setUserId:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC6userIdSSSgvs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5134,8 +6301,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC6userIdSSSgvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC6userIdSSSgvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC6userIdSSSgvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC6userIdSSSgvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5163,8 +6330,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)hasUserConsent",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC14hasUserConsentSo8NSNumberCSgvp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)hasUserConsent",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC14hasUserConsentSo8NSNumberCSgvp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5192,8 +6359,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)hasUserConsent",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC14hasUserConsentSo8NSNumberCSgvg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)hasUserConsent",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC14hasUserConsentSo8NSNumberCSgvg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5226,8 +6393,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setHasUserConsent:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC14hasUserConsentSo8NSNumberCSgvs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setHasUserConsent:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC14hasUserConsentSo8NSNumberCSgvs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5246,8 +6413,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC14hasUserConsentSo8NSNumberCSgvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC14hasUserConsentSo8NSNumberCSgvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC14hasUserConsentSo8NSNumberCSgvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC14hasUserConsentSo8NSNumberCSgvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5275,8 +6442,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)gdprConsentString",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC17gdprConsentStringSSSgvp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)gdprConsentString",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC17gdprConsentStringSSSgvp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5304,8 +6471,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)gdprConsentString",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC17gdprConsentStringSSSgvg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)gdprConsentString",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC17gdprConsentStringSSSgvg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5338,8 +6505,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setGdprConsentString:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC17gdprConsentStringSSSgvs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setGdprConsentString:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC17gdprConsentStringSSSgvs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5358,8 +6525,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC17gdprConsentStringSSSgvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC17gdprConsentStringSSSgvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC17gdprConsentStringSSSgvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC17gdprConsentStringSSSgvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5387,8 +6554,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)doNotSell",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC9doNotSellSo8NSNumberCSgvp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)doNotSell",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC9doNotSellSo8NSNumberCSgvp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5416,8 +6583,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)doNotSell",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC9doNotSellSo8NSNumberCSgvg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)doNotSell",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC9doNotSellSo8NSNumberCSgvg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5450,8 +6617,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setDoNotSell:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC9doNotSellSo8NSNumberCSgvs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setDoNotSell:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC9doNotSellSo8NSNumberCSgvs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5470,8 +6637,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC9doNotSellSo8NSNumberCSgvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC9doNotSellSo8NSNumberCSgvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC9doNotSellSo8NSNumberCSgvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC9doNotSellSo8NSNumberCSgvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5499,8 +6666,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)ccpaString",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC10ccpaStringSSSgvp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)ccpaString",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC10ccpaStringSSSgvp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5528,8 +6695,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)ccpaString",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC10ccpaStringSSSgvg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)ccpaString",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC10ccpaStringSSSgvg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5562,8 +6729,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setCcpaString:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC10ccpaStringSSSgvs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setCcpaString:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC10ccpaStringSSSgvs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5582,8 +6749,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC10ccpaStringSSSgvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC10ccpaStringSSSgvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC10ccpaStringSSSgvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC10ccpaStringSSSgvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5611,8 +6778,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)isTaggedForChildDirectedTreatment",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)isTaggedForChildDirectedTreatment",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5640,8 +6807,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)isTaggedForChildDirectedTreatment",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)isTaggedForChildDirectedTreatment",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5674,8 +6841,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setIsTaggedForChildDirectedTreatment:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setIsTaggedForChildDirectedTreatment:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5694,8 +6861,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC33isTaggedForChildDirectedTreatmentSo8NSNumberCSgvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5715,8 +6882,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(py)logLevel",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC8logLevelAA0ab4CLogF0Ovp",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(py)logLevel",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC8logLevelAA0ab4CLogF0Ovp",
             "moduleName": "DaroObjCBridge",
             "declAttributes": [
               "AccessControl",
@@ -5736,8 +6903,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)logLevel",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC8logLevelAA0ab4CLogF0Ovg",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)logLevel",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC8logLevelAA0ab4CLogF0Ovg",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5762,8 +6929,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)setLogLevel:",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC8logLevelAA0ab4CLogF0Ovs",
+                "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)setLogLevel:",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC8logLevelAA0ab4CLogF0Ovs",
                 "moduleName": "DaroObjCBridge",
                 "declAttributes": [
                   "ObjC"
@@ -5782,8 +6949,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DaroObjCBridge0abC7ManagerC8logLevelAA0ab4CLogF0OvM",
-                "mangledName": "$s14DaroObjCBridge0abC7ManagerC8logLevelAA0ab4CLogF0OvM",
+                "usr": "s:14DaroObjCBridge0aB4CAdsC8logLevelAA0ab4CLogF0OvM",
+                "mangledName": "$s14DaroObjCBridge0aB4CAdsC8logLevelAA0ab4CLogF0OvM",
                 "moduleName": "DaroObjCBridge",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5828,8 +6995,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager(im)initializeWithCompletion:",
-            "mangledName": "$s14DaroObjCBridge0abC7ManagerC10initialize10completionyySo7NSErrorCSgc_tF",
+            "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds(im)initializeWithCompletion:",
+            "mangledName": "$s14DaroObjCBridge0aB4CAdsC10initialize10completionyySo7NSErrorCSgc_tF",
             "moduleName": "DaroObjCBridge",
             "objc_name": "initializeWithCompletion:",
             "declAttributes": [
@@ -5840,8 +7007,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCBridgeManager",
-        "mangledName": "$s14DaroObjCBridge0abC7ManagerC",
+        "usr": "c:@M@DaroObjCBridge@objc(cs)DaroObjCAds",
+        "mangledName": "$s14DaroObjCBridge0aB4CAdsC",
         "moduleName": "DaroObjCBridge",
         "declAttributes": [
           "AccessControl",
@@ -6947,147 +8114,154 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCAppOpenAd.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCAppOpenAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1095,
+      "offset": 1063,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerSize.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerSize.swift",
       "kind": "IntegerLiteral",
       "offset": 238,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerSize.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerSize.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 1467,
+      "offset": 1498,
       "length": 28,
       "value": "\"com.daro.objcbridge.banner\""
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1519,
+      "offset": 1550,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCInterstitialAd.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1193,
+      "offset": 1161,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCLineBannerView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCLightPopupAd.swift",
+      "kind": "FloatLiteral",
+      "offset": 655,
+      "length": 4,
+      "value": "0.32"
+    },
+    {
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCLightPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 1502,
+      "offset": 736,
+      "length": 7,
+      "value": "\"Close\""
+    },
+    {
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCLineBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1533,
       "length": 32,
       "value": "\"com.daro.objcbridge.linebanner\""
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCLineBannerView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCLineBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1558,
+      "offset": 1589,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1101,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
       "kind": "StringLiteral",
-      "offset": 1590,
+      "offset": 1635,
       "length": 28,
       "value": "\"com.daro.objcbridge.native\""
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1642,
+      "offset": 1687,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCNativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2497,
+      "offset": 2543,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCRewardedAd.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/AdFormats\/DaroObjCRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1385,
+      "offset": 1353,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/DaroObjCBridgeManager.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/DaroObjCAds.swift",
       "kind": "IntegerLiteral",
       "offset": 124,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/DaroObjCBridgeManager.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/DaroObjCAds.swift",
       "kind": "IntegerLiteral",
       "offset": 143,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/DaroObjCBridgeManager.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/DaroObjCAds.swift",
       "kind": "IntegerLiteral",
       "offset": 162,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 127,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 153,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 175,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 195,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/finn\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
+      "filePath": "\/Users\/delightroom\/Developer\/daroX-iOS\/Submodules\/objc-bridge\/Sources\/DaroObjCBridge\/Models\/DaroObjCAdInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
       "length": 1,
