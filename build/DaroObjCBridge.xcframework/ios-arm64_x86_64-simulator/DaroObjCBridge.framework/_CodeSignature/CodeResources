@@ -81,6 +81,10 @@
 	<dict>
 		<key>Headers/DaroObjCAppOpenAdDelegate.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			USB5Kc5Pen/xqzKBJjBsvTs8rYw=
+			</data>
 			<key>hash2</key>
 			<data>
 			Y/ZlE3gOcIkYn/n3QnvCBj9NRLIfAMKu4B/nK6i7XJI=
@@ -88,6 +92,10 @@
 		</dict>
 		<key>Headers/DaroObjCBridge-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wJEDhn7J1c1vpoEqX3bxmnTc7X4=
+			</data>
 			<key>hash2</key>
 			<data>
 			cbmejooi+8LZu3tBFhGJO2RL15WBP3WbMYtfG0muVpE=
@@ -95,6 +103,10 @@
 		</dict>
 		<key>Headers/DaroObjCBridge.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			H7QRdVnF9BwrLXPdx1A8crHxJFs=
+			</data>
 			<key>hash2</key>
 			<data>
 			YYdtGpE+nr/KABt1nZ9MvPrDu8Hyq+raG8HDurW1p9w=
@@ -102,6 +114,10 @@
 		</dict>
 		<key>Headers/DaroObjCInterstitialAdDelegate.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4XVIPHqRm36fcqnHjJlrScRDMaM=
+			</data>
 			<key>hash2</key>
 			<data>
 			/99kWqN9TyYEY8MnW/KdYqGg279OReSmmgKen5yHBkg=
@@ -109,6 +125,10 @@
 		</dict>
 		<key>Headers/DaroObjCRewardedAdDelegate.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Xaigxh1MMfbhvZx906oAnESPDeo=
+			</data>
 			<key>hash2</key>
 			<data>
 			R3hSbDPMecIh55Ue1KuY3LqsHKCXk/KdMqaOqHuQ++A=
@@ -116,6 +136,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/zwwBEkKMaQ7+yygMH5DmdqAHCM=
+			</data>
 			<key>hash2</key>
 			<data>
 			vzAMNxuI4PdCJvvFiEdJOM5jPgbatrY0qL3KzhdeDOo=
@@ -123,6 +147,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			yJbSLX9dQYCXiQl132USiYMWC1I=
+			</data>
 			<key>hash2</key>
 			<data>
 			79SLwKpeGzZtPCeoaE57FRsXckxLP3CK7B3HR7ro78M=
@@ -130,6 +158,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			H8gafF0TDoLP3khJJs18j61wwT0=
+			</data>
 			<key>hash2</key>
 			<data>
 			dBv2tTuyYIJ4LVBSzbNSaX4JbPDju5md2zuM5BOjQT4=
@@ -137,6 +169,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			yJbSLX9dQYCXiQl132USiYMWC1I=
+			</data>
 			<key>hash2</key>
 			<data>
 			79SLwKpeGzZtPCeoaE57FRsXckxLP3CK7B3HR7ro78M=
@@ -144,6 +180,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WvpyiScTH90PFHNr7onaZ6c/vYA=
+			</data>
 			<key>hash2</key>
 			<data>
 			YucPKSFgYh69+EEodw4X3rxZJBGcfRZXvj9tq9nt4Yw=
@@ -151,6 +191,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/zwwBEkKMaQ7+yygMH5DmdqAHCM=
+			</data>
 			<key>hash2</key>
 			<data>
 			vzAMNxuI4PdCJvvFiEdJOM5jPgbatrY0qL3KzhdeDOo=
@@ -158,6 +202,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4wFO/5WEkZHEpNTbnfmHwWp+jLU=
+			</data>
 			<key>hash2</key>
 			<data>
 			wYFD3PUamhaRvwaqg2EQ2tMcokROR0fUJNOxgeyS81w=
@@ -165,6 +213,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			agPyEU8KBro6agAggCEVO2I4C0Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			GYnc/zvnOzANhPlOznhRCrrTbvlww2S6Pk3lSbyxdZE=
@@ -172,6 +224,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4wFO/5WEkZHEpNTbnfmHwWp+jLU=
+			</data>
 			<key>hash2</key>
 			<data>
 			wYFD3PUamhaRvwaqg2EQ2tMcokROR0fUJNOxgeyS81w=
@@ -179,6 +235,10 @@
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FtpEisU+K+opeKJcLfZbTaeuAVA=
+			</data>
 			<key>hash2</key>
 			<data>
 			SzDfqo8URpYhZFJunOsW75QE6QfHPdNT8ucEymxfWTA=
@@ -186,6 +246,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FqQqU973mDV0PBDmVHHlU6UpipY=
+			</data>
 			<key>hash2</key>
 			<data>
 			oi9YccGA/Bh/wmZY/UcwpA22mU+oLNilh2B/8sxam0k=
@@ -193,6 +257,10 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			VWCA3MeaiPMoOAS1uOteTSLX8js=
+			</data>
 			<key>hash2</key>
 			<data>
 			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
