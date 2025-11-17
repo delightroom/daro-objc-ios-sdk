@@ -2,19 +2,380 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DaroObjCBridge
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
-import Daro
+import AdSupport
+import AppTrackingTransparency
+import Combine
+import CryptoKit
 @_exported import DaroObjCBridge
+import Darwin
 import Foundation
+import Darwin.Mach
 import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc final public class DaroObjCBridgeResources : ObjectiveC.NSObject {
-  @objc final public class var bundle: Foundation.Bundle {
-    @objc get
+import os.log
+import os
+public protocol HasAdListener {
+  var adInfo: DaroObjCBridge.DaroAdInfo { get }
+  var listener: DaroObjCBridge.DaroAdListener<Self> { get }
+}
+@_hasMissingDesignatedInitializers public class DaroAdLoader<T> : ObjectiveC.NSObject where T : DaroObjCBridge.HasAdListener {
+  final public let listener: DaroObjCBridge.DaroAdListener<T>
+  public func loadAd()
+  public func loadAd() async throws -> T
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class DaroAppOpenAd : ObjectiveC.NSObject, DaroObjCBridge.HasAdListener {
+  final public let listener: DaroObjCBridge.DaroAdListener<DaroObjCBridge.DaroAppOpenAd>
+  final public var appOpenAdListener: DaroObjCBridge.DaroAppOpenListener
+  final public var adInfo: DaroObjCBridge.DaroAdInfo {
+    get
   }
-  @objc override dynamic public init()
+  final public var isReady: Swift.Bool {
+    get
+  }
+  final public func show()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class DaroInterstitialAd : ObjectiveC.NSObject, DaroObjCBridge.HasAdListener {
+  final public let listener: DaroObjCBridge.DaroAdListener<DaroObjCBridge.DaroInterstitialAd>
+  final public let interstitialListener: DaroObjCBridge.DaroInterstitialListener
+  final public var adInfo: DaroObjCBridge.DaroAdInfo {
+    get
+  }
+  final public var isReady: Swift.Bool {
+    get
+  }
+  final public func show(viewController: UIKit.UIViewController?)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class DaroRewardedAd : ObjectiveC.NSObject, DaroObjCBridge.HasAdListener {
+  final public let listener: DaroObjCBridge.DaroAdListener<DaroObjCBridge.DaroRewardedAd>
+  final public let rewardedAdListener: DaroObjCBridge.DaroRewardedListener
+  final public var adInfo: DaroObjCBridge.DaroAdInfo {
+    get
+  }
+  final public var isReady: Swift.Bool {
+    get
+  }
+  final public func setPlacement(_ placement: Swift.String)
+  final public func setCustomData(_ customData: Swift.String)
+  final public func show(viewController: UIKit.UIViewController?)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class CommonAdBannerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public let listener: DaroObjCBridge.DaroAdListener<DaroObjCBridge.DaroAdUnit>
+  @_Concurrency.MainActor @preconcurrency public var rootViewController: UIKit.UIViewController? {
+    get
+    set
+  }
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency public func loadAd()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var isHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+public enum DaroAdBannerSize {
+  case banner
+  case MREC
+  public var width: CoreFoundation.CGFloat {
+    get
+  }
+  public var height: CoreFoundation.CGFloat {
+    get
+  }
+  public var adFormat: DaroObjCBridge.DaroAdFormat {
+    get
+  }
+  public static func == (a: DaroObjCBridge.DaroAdBannerSize, b: DaroObjCBridge.DaroAdBannerSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol AdNativeLoadable : AnyObject {
+  var listener: DaroObjCBridge.DaroAdListener<Swift.Void> { get }
+  var refreshInterval: Foundation.TimeInterval { get }
+  func loadAd() async throws -> DaroObjCBridge.DaroAdNative
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class CommonAdNativeView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public let listener: DaroObjCBridge.DaroAdListener<DaroObjCBridge.DaroAdUnit>
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency open func bindViews(titleLabel: UIKit.UILabel? = nil, advertiserLabel: UIKit.UILabel? = nil, bodyLabel: UIKit.UILabel? = nil, iconImageView: UIKit.UIImageView? = nil, mediaContentView: UIKit.UIView? = nil, callToActionButton: UIKit.UIButton? = nil)
+  @_Concurrency.MainActor @preconcurrency open func clearNativeAd()
+  @_Concurrency.MainActor @preconcurrency public func loadAd()
+  @_Concurrency.MainActor @preconcurrency open func renderAd(for nativeAd: DaroObjCBridge.DaroAdNative, loader: any DaroObjCBridge.AdNativeLoadable)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var isHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension DaroObjCBridge.CommonAdNativeView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func addSubview(_ view: UIKit.UIView)
+}
+public struct DaroAdNative {
+}
+public struct DaroAdInfo {
+  public let adFormat: DaroObjCBridge.DaroAdFormat
+  public let adUnitId: Swift.String
+  public let latency: Foundation.TimeInterval?
+}
+public struct DaroRewardedItem {
+  public let amount: Swift.Int
+  public let rewardType: Swift.String
+  public init(amount: Swift.Int, rewardType: Swift.String)
+}
+final public class DaroAdListener<DaroAd> {
+  final public var onAdLoadSuccess: ((DaroAd, DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onAdLoadFail: ((DaroObjCBridge.DaroError) -> Swift.Void)?
+  final public var onAdClicked: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onAdImpression: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  public init()
+  @objc deinit
+}
+public protocol DaroDisplayListener {
+  var onShown: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)? { get set }
+  var onFailedToShow: ((DaroObjCBridge.DaroAdInfo?, DaroObjCBridge.DaroError) -> Swift.Void)? { get set }
+  var onDismiss: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)? { get set }
+}
+final public class DaroInterstitialListener : DaroObjCBridge.DaroDisplayListener {
+  final public var onShown: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onFailedToShow: ((DaroObjCBridge.DaroAdInfo?, DaroObjCBridge.DaroError) -> Swift.Void)?
+  final public var onDismiss: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DaroRewardedListener : DaroObjCBridge.DaroDisplayListener {
+  final public var onShown: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onFailedToShow: ((DaroObjCBridge.DaroAdInfo?, DaroObjCBridge.DaroError) -> Swift.Void)?
+  final public var onDismiss: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onEarnedReward: ((DaroObjCBridge.DaroAdInfo?, DaroObjCBridge.DaroRewardedItem?) -> Swift.Void)?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DaroAppOpenListener : DaroObjCBridge.DaroDisplayListener {
+  final public var onShown: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onFailedToShow: ((DaroObjCBridge.DaroAdInfo?, DaroObjCBridge.DaroError) -> Swift.Void)?
+  final public var onDismiss: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  @objc deinit
+}
+final public class DaroLightPopupListener : DaroObjCBridge.DaroDisplayListener {
+  final public var onShown: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  final public var onFailedToShow: ((DaroObjCBridge.DaroAdInfo?, DaroObjCBridge.DaroError) -> Swift.Void)?
+  final public var onDismiss: ((DaroObjCBridge.DaroAdInfo?) -> Swift.Void)?
+  public init()
+  @objc deinit
+}
+public enum DaroAdFormat : Swift.String {
+  case banner
+  case mrec
+  case interstitial
+  case rewarded
+  case native
+  case lightPopup
+  case appOpen
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DaroAdUnit {
+  public let unitId: Swift.String
+  public let placement: Swift.String?
+  public init(unitId: Swift.String, placement: Swift.String? = nil)
+}
+public struct DaroAppInfo : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+final public class DaroError : Swift.Error, Swift.CustomDebugStringConvertible {
+  final public let code: DaroObjCBridge.DaroError.Code
+  final public let message: Swift.String
+  public init(code: DaroObjCBridge.DaroError.Code, message: Swift.String)
+  final public var debugDescription: Swift.String {
+    get
+  }
+  public static let unspecified: DaroObjCBridge.DaroError
+  public static let initializationFailed: DaroObjCBridge.DaroError
+  @objc deinit
+}
+extension DaroObjCBridge.DaroError {
+  public enum Code : Swift.Int {
+    case unspecified
+    case notInitialized
+    case initializationFailed
+    case noFill
+    case adLoadFailed
+    case invalidAdUnitIdentifier
+    case networkError
+    case networkTimeout
+    case noNetwork
+    case fullscreenAdAlreadyShowing
+    case fullscreenAdNotReady
+    case fullscreenAdInvalidViewController
+    case fullscreenAdAlreadyLoading
+    case fullscreenAdLoadWhileShowing
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+public protocol DaroPlugin : AnyObject {
+  var identifier: Swift.String { get }
+  var version: Swift.String { get }
+  var name: Swift.String { get }
+  var description: Swift.String { get }
+  var requiredDaroVersion: Swift.String { get }
+  var eventHandler: (Swift.String?) -> Swift.Void { get }
+}
+public protocol PluginRegisterble : AnyObject {
+  func registerPlugin<P>(_ plugin: P) where P : DaroObjCBridge.DaroPlugin
+}
+extension DaroObjCBridge.PluginRegisterble {
+  public func registerPlugin<P>(_ plugin: P) where P : DaroObjCBridge.DaroPlugin
+}
+extension DaroObjCBridge.DaroAdLoader : DaroObjCBridge.PluginRegisterble {
+}
+extension DaroObjCBridge.CommonAdBannerView : DaroObjCBridge.PluginRegisterble {
+}
+extension DaroObjCBridge.CommonAdNativeView : DaroObjCBridge.PluginRegisterble {
+}
+public enum DaroLogLevel : Swift.Int, Swift.Equatable, Swift.Comparable, Swift.CustomStringConvertible {
+  public static func < (lhs: DaroObjCBridge.DaroLogLevel, rhs: DaroObjCBridge.DaroLogLevel) -> Swift.Bool
+  case off
+  case error
+  case debug
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class DaroAdBannerView : DaroObjCBridge.CommonAdBannerView {
+  @_Concurrency.MainActor @preconcurrency public init(unit: DaroObjCBridge.DaroAdUnit, bannerSize: DaroObjCBridge.DaroAdBannerSize, autoLoad: Swift.Bool = true)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class DaroAdLineBannerView : DaroObjCBridge.TemplateAdLineBannerView {
+  @_Concurrency.MainActor @preconcurrency override final public func renderAd(for nativeAd: DaroObjCBridge.DaroAdNative, loader: any DaroObjCBridge.AdNativeLoadable)
+  @_Concurrency.MainActor @preconcurrency override public init(unit: DaroObjCBridge.DaroAdUnit, autoLoad: Swift.Bool = super)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class DaroAdNativeView : DaroObjCBridge.CommonAdNativeView {
+  @_Concurrency.MainActor @preconcurrency public init(unit: DaroObjCBridge.DaroAdUnit, autoLoad: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency override public func bindViews(titleLabel: UIKit.UILabel? = nil, advertiserLabel: UIKit.UILabel? = nil, bodyLabel: UIKit.UILabel? = nil, iconImageView: UIKit.UIImageView? = nil, mediaContentView: UIKit.UIView? = nil, callToActionButton: UIKit.UIButton? = nil)
+  @_Concurrency.MainActor @preconcurrency override open func clearNativeAd()
+  @_Concurrency.MainActor @preconcurrency override open func renderAd(for nativeAd: DaroObjCBridge.DaroAdNative, loader: any DaroObjCBridge.AdNativeLoadable)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DaroAds {
+  public static let shared: DaroObjCBridge.DaroAds
+  final public var userId: Swift.String?
+  final public var logLevel: DaroObjCBridge.DaroLogLevel {
+    get
+    set
+  }
+  final public var hasUserConsent: Swift.Bool?
+  final public var gdprConsentString: Swift.String?
+  final public var doNotSell: Swift.Bool?
+  final public var ccpaString: Swift.String?
+  final public var isTaggedForChildDirectedTreatment: Swift.Bool?
+  final public func initialized(completion: @escaping @_Concurrency.MainActor (DaroObjCBridge.DaroError?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DaroAppOpenAdLoader : DaroObjCBridge.DaroAdLoader<DaroObjCBridge.DaroAppOpenAd> {
+  public init(unit: DaroObjCBridge.DaroAdUnit)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DaroInterstitialAdLoader : DaroObjCBridge.DaroAdLoader<DaroObjCBridge.DaroInterstitialAd> {
+  public init(unit: DaroObjCBridge.DaroAdUnit)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DaroRewardedAdLoader : DaroObjCBridge.DaroAdLoader<DaroObjCBridge.DaroRewardedAd> {
+  public init(unit: DaroObjCBridge.DaroAdUnit)
+  @objc deinit
+}
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Foundation.NSError {
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+}
+#else
+extension Foundation.NSError {
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+}
+#endif
+@objc @_hasMissingDesignatedInitializers final public class DaroLightPopupAd : ObjectiveC.NSObject {
+  final public var lightPopupAdListener: DaroObjCBridge.DaroLightPopupListener {
+    get
+  }
+  final public var configuration: DaroObjCBridge.DaroLightPopupConfiguration {
+    get
+    set
+  }
+  final public func show(viewController: UIKit.UIViewController)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class DaroLightPopupAdLoader : ObjectiveC.NSObject, DaroObjCBridge.PluginRegisterble {
+  final public let listener: DaroObjCBridge.DaroAdListener<DaroObjCBridge.DaroLightPopupAd>
+  convenience public init(unit: DaroObjCBridge.DaroAdUnit)
+  final public func loadAd()
+  @objc deinit
+}
+final public class DaroLightPopupConfiguration {
+  final public var backgroundColor: UIKit.UIColor
+  final public var cardViewBackgroundColor: UIKit.UIColor
+  final public var adMarkLabelTextColor: UIKit.UIColor
+  final public var adMarkLabelBackgroundColor: UIKit.UIColor
+  final public var closeButtonText: Swift.String
+  final public var closeButtonTextColor: UIKit.UIColor
+  final public var titleTextColor: UIKit.UIColor
+  final public var bodyTextColor: UIKit.UIColor
+  final public var ctaButtonTextColor: UIKit.UIColor
+  final public var ctaButtonBackgroundColor: UIKit.UIColor
+  public init()
+  @objc deinit
+}
+final public class DaroLineNativeAdConfiguration {
+  final public var backgroundColor: UIKit.UIColor
+  final public var adMarkTextColor: UIKit.UIColor
+  final public var adMarkBackgroundColor: UIKit.UIColor
+  final public var titleTextColor: UIKit.UIColor
+  final public var ctaTextColor: UIKit.UIColor
+  final public var ctaBackgroundColor: UIKit.UIColor
+  public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TemplateAdLineBannerView : DaroObjCBridge.DaroAdNativeView {
+  @_Concurrency.MainActor @preconcurrency public var configuration: DaroObjCBridge.DaroLineNativeAdConfiguration {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency override public init(unit: DaroObjCBridge.DaroAdUnit, autoLoad: Swift.Bool = true)
   @objc deinit
 }
 @objc public class DaroObjCAppOpenAd : ObjectiveC.NSObject {
@@ -224,6 +585,16 @@ import _SwiftConcurrencyShims
   @objc public init(amount: Swift.Int, rewardType: Swift.String)
   @objc deinit
 }
+extension DaroObjCBridge.DaroAdBannerSize : Swift.Equatable {}
+extension DaroObjCBridge.DaroAdBannerSize : Swift.Hashable {}
+extension DaroObjCBridge.DaroAdFormat : Swift.Equatable {}
+extension DaroObjCBridge.DaroAdFormat : Swift.Hashable {}
+extension DaroObjCBridge.DaroAdFormat : Swift.RawRepresentable {}
+extension DaroObjCBridge.DaroError.Code : Swift.Equatable {}
+extension DaroObjCBridge.DaroError.Code : Swift.Hashable {}
+extension DaroObjCBridge.DaroError.Code : Swift.RawRepresentable {}
+extension DaroObjCBridge.DaroLogLevel : Swift.Hashable {}
+extension DaroObjCBridge.DaroLogLevel : Swift.RawRepresentable {}
 extension DaroObjCBridge.DaroObjCBannerSize : Swift.Equatable {}
 extension DaroObjCBridge.DaroObjCBannerSize : Swift.Hashable {}
 extension DaroObjCBridge.DaroObjCBannerSize : Swift.RawRepresentable {}
