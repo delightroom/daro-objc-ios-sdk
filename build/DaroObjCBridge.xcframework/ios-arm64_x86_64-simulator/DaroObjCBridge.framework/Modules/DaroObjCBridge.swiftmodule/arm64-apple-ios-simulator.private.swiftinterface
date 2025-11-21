@@ -552,7 +552,7 @@ final public class DaroLineNativeAdConfiguration {
     @objc get
     @objc set
   }
-  @objc public func setAppMuted(_ muted: Foundation.NSNumber)
+  @objc public func setAppMuted(_ muted: Swift.Bool)
   @objc public var isTaggedForChildDirectedTreatment: Foundation.NSNumber? {
     @objc get
     @objc set

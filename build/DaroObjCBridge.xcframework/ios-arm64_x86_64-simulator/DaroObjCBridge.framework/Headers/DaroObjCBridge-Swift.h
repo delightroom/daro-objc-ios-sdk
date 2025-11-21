@@ -419,7 +419,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DaroObjCAds 
 @property (nonatomic, copy) NSString * _Nullable gdprConsentString;
 @property (nonatomic, strong) NSNumber * _Nullable doNotSell;
 @property (nonatomic, copy) NSString * _Nullable ccpaString;
-- (void)setAppMuted:(NSNumber * _Nonnull)muted;
+- (void)setAppMuted:(BOOL)muted;
 @property (nonatomic, strong) NSNumber * _Nullable isTaggedForChildDirectedTreatment;
 @property (nonatomic) enum DaroObjCLogLevel logLevel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1092,7 +1092,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DaroObjCAds 
 @property (nonatomic, copy) NSString * _Nullable gdprConsentString;
 @property (nonatomic, strong) NSNumber * _Nullable doNotSell;
 @property (nonatomic, copy) NSString * _Nullable ccpaString;
-- (void)setAppMuted:(NSNumber * _Nonnull)muted;
+- (void)setAppMuted:(BOOL)muted;
 @property (nonatomic, strong) NSNumber * _Nullable isTaggedForChildDirectedTreatment;
 @property (nonatomic) enum DaroObjCLogLevel logLevel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
