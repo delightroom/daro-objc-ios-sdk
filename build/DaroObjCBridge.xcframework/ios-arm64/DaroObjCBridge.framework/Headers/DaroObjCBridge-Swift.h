@@ -402,8 +402,7 @@ SWIFT_CLASS("_TtC14DaroObjCBridge14DaroObjCAdInfo")
 @property (nonatomic, readonly) enum DaroObjCAdFormat adFormat;
 @property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 @property (nonatomic, readonly, strong) NSNumber * _Nullable latency;
-@property (nonatomic, readonly, copy) NSString * _Nullable adNetwork;
-- (nonnull instancetype)initWithAdFormat:(enum DaroObjCAdFormat)adFormat adUnitId:(NSString * _Nonnull)adUnitId latency:(NSNumber * _Nullable)latency adNetwork:(NSString * _Nullable)adNetwork OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAdFormat:(enum DaroObjCAdFormat)adFormat adUnitId:(NSString * _Nonnull)adUnitId latency:(NSNumber * _Nullable)latency OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -420,6 +419,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DaroObjCAds 
 @property (nonatomic, copy) NSString * _Nullable gdprConsentString;
 @property (nonatomic, strong) NSNumber * _Nullable doNotSell;
 @property (nonatomic, copy) NSString * _Nullable ccpaString;
+- (void)setAppMuted:(NSNumber * _Nonnull)muted;
 @property (nonatomic, strong) NSNumber * _Nullable isTaggedForChildDirectedTreatment;
 @property (nonatomic) enum DaroObjCLogLevel logLevel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

@@ -199,11 +199,14 @@ public struct DaroAppInfo : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-final public class DaroError : Swift.Error, Swift.CustomDebugStringConvertible {
+@_hasMissingDesignatedInitializers final public class DaroError : Swift.Error, Foundation.LocalizedError, Swift.CustomDebugStringConvertible {
   final public let code: DaroObjCBridge.DaroError.Code
   final public let message: Swift.String
   public init(code: DaroObjCBridge.DaroError.Code, message: Swift.String)
   final public var debugDescription: Swift.String {
+    get
+  }
+  final public var errorDescription: Swift.String? {
     get
   }
   public static let unspecified: DaroObjCBridge.DaroError
@@ -295,6 +298,7 @@ public enum DaroLogLevel : Swift.Int, Swift.Equatable, Swift.Comparable, Swift.C
   final public var doNotSell: Swift.Bool?
   final public var ccpaString: Swift.String?
   final public var isTaggedForChildDirectedTreatment: Swift.Bool?
+  final public func setAppMuted(_ muted: Swift.Bool)
   final public func initialized(completion: @escaping @_Concurrency.MainActor (DaroObjCBridge.DaroError?) -> Swift.Void)
   @objc deinit
 }
@@ -548,6 +552,7 @@ final public class DaroLineNativeAdConfiguration {
     @objc get
     @objc set
   }
+  @objc public func setAppMuted(_ muted: Foundation.NSNumber)
   @objc public var isTaggedForChildDirectedTreatment: Foundation.NSNumber? {
     @objc get
     @objc set
@@ -575,8 +580,7 @@ final public class DaroLineNativeAdConfiguration {
   @objc final public let adFormat: DaroObjCBridge.DaroObjCAdFormat
   @objc final public let adUnitId: Swift.String
   @objc final public let latency: Foundation.NSNumber?
-  @objc final public let adNetwork: Swift.String?
-  @objc public init(adFormat: DaroObjCBridge.DaroObjCAdFormat, adUnitId: Swift.String, latency: Foundation.NSNumber?, adNetwork: Swift.String?)
+  @objc public init(adFormat: DaroObjCBridge.DaroObjCAdFormat, adUnitId: Swift.String, latency: Foundation.NSNumber?)
   @objc deinit
 }
 @objc public class DaroObjCRewardedItem : ObjectiveC.NSObject {
