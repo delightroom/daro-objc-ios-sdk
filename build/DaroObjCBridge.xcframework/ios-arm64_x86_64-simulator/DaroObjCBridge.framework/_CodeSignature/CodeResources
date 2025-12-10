@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ozhJ8jIVdhQRsfj5SJg5pK9ggec=
+		ALLvJZb8rQV1YvOhzxshNM9oca0=
 		</data>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QvFwp9VP6sIomYS2DuPaHe7bWx8=
+		BByaRHfYIKsQPpwcd2/YoSoH3HA=
 		</data>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ozhJ8jIVdhQRsfj5SJg5pK9ggec=
+		ALLvJZb8rQV1YvOhzxshNM9oca0=
 		</data>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Z3jZSqbWwTWyViCRdy0TWlXsCJo=
+		e209zGrlb8jC6Dw+UaIB13zzg4w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -153,11 +153,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ozhJ8jIVdhQRsfj5SJg5pK9ggec=
+			ALLvJZb8rQV1YvOhzxshNM9oca0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ndBlbGAia7MSkGRFWE731r3LcbiWzvFguTHdgWGEcvo=
+			+eNpH/keGJRulXbIKPmqA2sU5XofRkrBw6uoQj2b0NE=
 			</data>
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -197,22 +197,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QvFwp9VP6sIomYS2DuPaHe7bWx8=
+			BByaRHfYIKsQPpwcd2/YoSoH3HA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UAD0FR3eYa/6witZ+2TpN7hsyyk1IlBXgiinV3HKlvA=
+			e7F/urAmvM8yKoEehIMp/oGc3nX5JExKywiOmJZCch4=
 			</data>
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ozhJ8jIVdhQRsfj5SJg5pK9ggec=
+			ALLvJZb8rQV1YvOhzxshNM9oca0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ndBlbGAia7MSkGRFWE731r3LcbiWzvFguTHdgWGEcvo=
+			+eNpH/keGJRulXbIKPmqA2sU5XofRkrBw6uoQj2b0NE=
 			</data>
 		</dict>
 		<key>Modules/DaroObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -252,11 +252,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z3jZSqbWwTWyViCRdy0TWlXsCJo=
+			e209zGrlb8jC6Dw+UaIB13zzg4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			12K0mHK7gp2Xka/lHjTMPTSYI8JyLLzjTNpfATFbi+o=
+			Lt565K7GIkmkJ35wrRpJzXw36Em6Lv1mmCWfYbogTXw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
